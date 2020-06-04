@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Proxima Nova Alt Lt';
+    src: url('fonts/ProximaNovaA-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Alt Rg';
+    src: url('fonts/ProximaNovaA-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BlackJack';
+    src:  url('fonts/BlackJackRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; outline: none; }
+
+body { font-family:'Proxima Nova Alt Rg';  font-weight: bold;
+    font-style: normal; } 
