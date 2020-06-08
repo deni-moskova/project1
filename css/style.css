@@ -27,16 +27,25 @@ body { font-family:'Proxima Nova Alt Rg';  font-weight: bold;
 .container{ width:940px; padding: 0 10px; margin: 0 auto; }
 .btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; }
 
-.header { background: url(images/background-header.png); color: #fff; max-height: 650px;}
+/*Header*/
+.header { background: url(images/background-header.png); color: #fff; max-height: 650px; }
 .logo { background: url(images/p-logo.png) no-repeat 0 0; width: 100px; height: 100px; font-size: 0; line-height: 0;
 text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 11px; }
-
-
 .header .container h1{ text-align: right; font-size: 70px; line-height: 74px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
-.header .container p { font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-style: normal; text-align: right;: }
+.header .container p {font-size: 35px; line-height: 39px; font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-style: normal; text-align: right;margin-top: 45px; }
 .header .container p strong { font-family: 'Proxima Nova Alt Rg';  font-weight: bold;  font-style: italic;}
-.header .container .img-holder img{  position: relative; top: 268px; left: 70px; }
+.header .container .menu { float: right; position: relative; top: -80px; font-size: 0; line-height: 0; text-indent: -999px; }
+.header .container .menu .bar1, .header .container .menu .bar2, .header .container .menu .bar3, .header .container .menu .bar4 { background-color: #fff; width: 30px; height: 5px; border-radius: 3px; margin-bottom: 2px;}
+.header .container .img-holder img{position: relative; left: 70px; bottom:-5px; margin-top: 67px;}
 .header .container .btn { color: #fff; padding-right: 57px; }
 .header .container .btn.right-aligned {float: right; margin-top: 40px; margin-right: 10px; }
 .header .container .btn .logo-dl { position: relative; font-size: 0; line-height: 0; text-indent: -100%;  }
-.header .container .btn .logo-dl:after { content: ''; background: url(images/dl-logo.png) no-repeat 0 0; width: 18px; height: 13px; display: block; position: absolute; top: 50%; left: 11px; transform: translateY(-50%); }
+.header .container .btn .logo-dl:after { content: ''; background: url(images/dl-logo.png) no-repeat 0 0; width: 18px; height: 13px; display: block; position: absolute; top: -5px; left: 11px; transform: translateY(-50%); }
+/*Header*/
+
+/*Main*/
+.main .container h2 { font-size: 40px; line-height: 44px; font-family: 'Proxima Nova Alt Lt';  color: #545454; padding-top: 140px;  }
+.main .container p { font-family: 'Proxima Nova Alt Rg'; font-weight: 300; font-size: 16px; line-height: 20px; color: #7e7e7e; margin-top: 30px; }
+.main .container p.quote{ font-style: italic; position: relative; padding-left: 17px; }
+.main .container p.quote:before { content: ''; width: 7px; height: 68px; top: 0; left: 0; display: block; position: absolute;background-color: #4eacdd; }
+/*Main*/
