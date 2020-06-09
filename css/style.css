@@ -44,8 +44,14 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 /*Header*/
 
 /*Main*/
+#first { width: 53.8%; }
+.main { background-color: #f4f4f4;  }
 .main .container h2 { font-size: 40px; line-height: 44px; font-family: 'Proxima Nova Alt Lt';  color: #545454; padding-top: 140px;  }
-.main .container p { font-family: 'Proxima Nova Alt Rg'; font-weight: 300; font-size: 16px; line-height: 20px; color: #7e7e7e; margin-top: 30px; }
+.main .container p { font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-size: 16px; line-height: 20px; color: #7e7e7e; margin-top: 30px; }
 .main .container p.quote{ font-style: italic; position: relative; padding-left: 17px; }
 .main .container p.quote:before { content: ''; width: 7px; height: 68px; top: 0; left: 0; display: block; position: absolute;background-color: #4eacdd; }
+.main .img-holder.right { float: right; }
+.main .container .btn.green { color: #21b395; border-color: #21b395; position: relative; top: 70px; left: 0; padding-right: 64px; }
+.main .container .btn .logo-mail{ position: relative; font-size: 0; line-height: 0; text-indent: -999px; }
+.main .container .btn .logo-mail:after { content: ''; background: url(images/mail-icon.png) no-repeat 0 0; width: 15px; height: 13px; top: -5px; right: -32px; transform: translateY(-50%); display: block; position: absolute; }
 /*Main*/
