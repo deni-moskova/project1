@@ -34,8 +34,13 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .header .container h1{ text-align: right; font-size: 70px; line-height: 74px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
 .header .container p {font-size: 35px; line-height: 39px; font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-style: normal; text-align: right;margin-top: 45px; }
 .header .container p strong { font-family: 'Proxima Nova Alt Rg';  font-weight: bold;  font-style: italic;}
-.header .container .menu { float: right; position: relative; top: -80px; font-size: 0; line-height: 0; text-indent: -999px;}
-.header .container .menu .bar1, .header .container .menu .bar2, .header .container .menu .bar3, .header .container .menu .bar4 { background-color: #fff; width: 30px; height: 5px; border-radius: 3px; margin-bottom: 2px;}
+.header .container .menu { float: right; position: relative; top: -80px; font-size: 0; line-height: 0; text-indent: -999px; border: 0; background-color: transparent;}
+.header .container .menu .bar1, .header .container .menu .bar2{ background-color: #fff; width: 30px; height: 4px; border-radius: 3px; margin-bottom: 2px; display: block; position: relative;}
+.header .container .menu .bar1:before, .header .container .menu .bar2:after{
+    content: ''; background-color: #fff; width: 30px; height: 4px; display: block; border-radius: 3px; position: absolute; 
+}
+.header .container .menu .bar1:before{ top: -6px; right: 0; }
+.header .container .menu .bar2:after{ bottom: -6px; right: 0; }
 .header .container .img-holder.phone {background:url(images/phone-image.png) no-repeat 0 0; width: 227px; height:268px;position: relative; left: 70px; bottom: 0; margin-top: 67px; font-size: 0; line-height: 0; text-indent: -999px; }
 .header .container .btn { color: #fff; padding-right: 57px; }
 .header .container .btn.right-aligned {float: right; margin-top: 40px; margin-right: 10px; }
@@ -59,3 +64,12 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .main .container .btn.pink { color: #ea4c89; border-color: #ea4c89; position: relative; padding-right: 60px; }
 .main .container .btn.pink:after { content: ''; display: block; background: url(images/dribble-logo.png) no-repeat 0 0; width: 13px; height: 13px; top: 50%; right: 32px; position: absolute; transform: translateY(-50%);  }
 /*Main*/
+
+
+/*Footer*/
+.footer .container { height: 102px; background-color: #fff; }
+.footer .container p{  font-family: 'Proxima Nova Rg'; font-size: 12px; line-height: 16px; font-style: italic; text-align: center; color: #545454; padding-top: 46px;}
+.footer .container strong { font-weight: normal; font-style: normal; color: #6dc5ea; }
+}
+.footer .container a { font-size: 0; line-height: 0; text-indent: -999px; text-decoration: none; }
+/*Footer*/
