@@ -70,6 +70,10 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .footer .container { height: 102px; background-color: #fff; }
 .footer .container p{  font-family: 'Proxima Nova Rg'; font-size: 12px; line-height: 16px; font-style: italic; text-align: center; color: #545454; padding-top: 46px;}
 .footer .container strong { font-weight: normal; font-style: normal; color: #6dc5ea; }
-}
-.footer .container a { font-size: 0; line-height: 0; text-indent: -999px; text-decoration: none; }
+.footer .container a { text-decoration: none; }
+.footer .container .btn-background { background-color: #f4f4f4; width: 40px; height: 40px; border-radius: 3px; position: absolute; margin-bottom: 28px; right: 60px;}
+.footer .container .arrow {   font-size: 0; line-height: 0; text-indent: -999px; position: relative; }
+.footer .container .arrow:before, .footer .container .arrow:after {content: ''; display: block; position: absolute; width: 9px; height: 2px; background-color:  #545454; border-radius: 3px; top: 20px; left: 20px;  } 
+.footer .container .arrow:before { transform: rotate(-45deg);  }
+.footer .container .arrow:after { transform: rotate(45deg); }
 /*Footer*/
