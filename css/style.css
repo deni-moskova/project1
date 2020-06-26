@@ -41,6 +41,9 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 }
 .header .container .menu .bar1:before{ top: -6px; right: 0; }
 .header .container .menu .bar2:after{ bottom: -6px; right: 0; }
+.header .container .menu.clicked .bar1:before,.header .container .menu.clicked .bar1:before{ background-color: transparent; }
+.header .container .menu.clicked .bar1 { transform: rotate(45deg); }
+.header .container .menu.clicked .bar2 { transform: rotate(-45deg); }
 .header .container .img-holder.phone {background:url(images/phone-image.png) no-repeat 0 0; width: 227px; height:268px;position: relative; left: 70px; bottom: 0; margin-top: 67px; font-size: 0; line-height: 0; text-indent: -999px; }
 .header .container .btn { color: #fff; padding-right: 57px; }
 .header .container .btn.right-aligned {float: right; margin-top: 40px; margin-right: 10px; }
