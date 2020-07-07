@@ -23,7 +23,7 @@
 
 body { font-family:'Proxima Nova Alt Rg';  font-weight: bold;
     font-style: normal; } 
-
+ul { list-style: none; }
 .container{ width:940px; padding: 0 10px; margin: 0 auto; }
 .btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; }
 
@@ -53,10 +53,10 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 /*Header*/
 
 /*Main*/
-#first { width: 53.8%; background-color: #f4f4f4; }
+#first { width: 53.8%;  }
 #second { width: 39.3%; }
 #second h2 { margin-top: 140px;  }
-.main { background-color: #f4f4f4;  }
+.main .container .holder-1 {  background-color: #f4f4f4; }
 .main .container h2 { font-size: 40px; line-height: 44px; font-family: 'Proxima Nova Alt Lt';  color: #545454; padding-top: 140px;  }
 .main .container p { font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-size: 16px; line-height: 20px; color: #7e7e7e; margin-top: 30px; }
 .main .container p.quote{ font-style: italic; position: relative; padding-left: 17px; }
@@ -68,7 +68,7 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 #third{}
 .main .container .btn.pink { color: #ea4c89; border-color: #ea4c89; position: relative; padding-right: 60px; }
 .main .container .btn.pink:after { content: ''; display: block; background: url(images/dribble-logo.png) no-repeat 0 0; width: 13px; height: 13px; top: 50%; right: 32px; position: absolute; transform: translateY(-50%);  }
-.main .img-devices { position: relative; }
+.main .img-devices { position: relative; margin-top: 100px; }
 .main .img-devices .devices{ position: absolute; display: block; font-size: 0; line-height: 0; text-indent: -999px;}
 .main .img-devices .devices.device1 { background: url('images/device1.png') no-repeat 0 0; width: 277px; height: 164px;  z-index: 5; top: 200px; left: 0; }
 .main .img-devices .devices.device2 { background: url('images/device2.png') no-repeat 0 0; width: 469px; height: 366px; left: 107px; top: 0; }
@@ -78,7 +78,12 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .main .container .green-part { text-align: center; background-color: #13c4af; }
 .main .container .social ul li { display: inline-block; }
 .main .container .social ul li > a { font-size: 0; line-height: 0; text-indent: -999px; }
-.main .container .social .ico-social { display: block; position: relative; }
+.main .container .social { position: relative; }
+.main .container .social .ico-social { display: block; position: relative;  border: 1px solid #000; border-radius: 50%; }
+.main .container .social .ico-social.drbl { background: url('images/dribble.png') no-repeat 0 0; width: 19px; height: 19px; padding: 10px; position: absolute;  }
+.main .container .social .ico-social.fb { background: url('images/social-facebook.png') no-repeat 0 0; width: 11px; height: 19px; padding: 10px; position: absolute;  }
+.main .container .social .ico-social.twtr { background: url('images/social-twitter.png') no-repeat 0 0; width: 24px; height: 11px; padding: 10px; position: absolute;  }
+.main .container .social .ico-social.email { background: url('images/social-email.png') no-repeat 0 0; width: 24px; height: 24px; padding: 10px; position: absolute;  }
 /*Main*/
 
 
