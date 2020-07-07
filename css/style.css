@@ -26,10 +26,10 @@ body { font-family:'Proxima Nova Alt Rg';  font-weight: bold;
 ul { list-style: none; }
 p { margin-bottom:30px; }
 .container{ width:940px; padding: 0 10px; margin: 0 auto; }
-.btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; }
+.btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; display: inline-block;}
 
 /*Header*/
-.header { background: url(images/background-header.jpg); color: #fff; max-height: 650px; }
+.header { background-image: url(images/background-header.jpg); color: #fff; max-height: 650px; }
 .logo { background: url(images/p-logo.png) no-repeat 0 0; width: 100px; height: 100px; font-size: 0; line-height: 0;
 text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 11px; }
 .header .container h1{ text-align: right; font-size: 70px; line-height: 74px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
@@ -56,37 +56,44 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 /*Main*/
 #first { width: 53.8%;  }
 #second { width: 39.3%; float: right; }
-#second h2 { margin-top: 140px;  }
-.main .holder-grey {  background-color: #f4f4f4; }
-.main .holder-green { text-align: center; background-color: #13c4af; clear: both; color: #fff; }
-.main .holder-green .btn.white { color: #fff; margin: 98px 0; }
-.main .holder-green .container h2 { color: #fff; margin-bottom: 40px; }
+
+.main .holder-white { position: relative; background-color: #fff; overflow: hidden;}
+.main .holder-grey {  background: #f4f4f4; position: relative; }
+.main .holder-green { text-align: center; background-image: url(images/green-background.jpg); clear: both; color: #fff; }
+.main .holder-green .btn.white { color: #fff; margin: 98px 0; position: relative; padding-right: 60px;  }
+.main .holder-green .btn.white:after { content: ''; background: url(images/beer-icon.png) no-repeat 0 0; width: 16px; height: 15px; position: absolute; display: block; top: 50%; left:; transform: translateY(-50%); right: 25px; }
+.main .holder-green .container h2 { color: #fff;  }
 .main .container h2 { font-size: 40px; line-height: 44px; font-family: 'Proxima Nova Alt Lt';  color: #545454; padding-top: 140px;  }
 .main .container p { font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-size: 16px; line-height: 20px; color: #7e7e7e; margin-top: 30px; }
 .main .container p.quote{ font-style: italic; position: relative; padding-left: 17px; }
 .main .container p.quote:before { content: ''; width: 7px; height: 68px; top: 0; left: 0; display: block; position: absolute;background-color: #4eacdd; }
-.main .container .img-holder.tablet {background: url(images/tablet-image.png) no-repeat 0 0; width: 338px; height: 449px; float: right; margin-top: 160px; position: absolute; right: 0}
+.main .container .img-holder.tablet {background: url(images/tablet-image.png) no-repeat 0 0; width: 338px; height: 449px; float: right; margin-top: 160px; position: absolute; right: 0; bottom: 0}
 .main .container .btn.green { color: #21b395; border-color: #21b395; position: relative; top: 70px; left: 0; padding-right: 64px; margin-bottom: 140px; }
 .main .container .btn .logo-mail{ position: relative; font-size: 0; line-height: 0; text-indent: -999px; }
 .main .container .btn .logo-mail:after { content: ''; background: url(images/mail-icon.png) no-repeat 0 0; width: 15px; height: 13px; top: -5px; right: -32px; transform: translateY(-50%); display: block; position: absolute; }
-.main .container .btn.pink { color: #ea4c89; border-color: #ea4c89; position: relative; padding-right: 60px;}
+.main .container .btn.pink { color: #ea4c89; border-color: #ea4c89; position: relative; padding-right: 60px; margin-bottom: 220px;}
 .main .container .btn.pink:after { content: ''; display: block; background: url(images/dribble-logo.png) no-repeat 0 0; width: 13px; height: 13px; top: 50%; right: 32px; position: absolute; transform: translateY(-50%);  }
-.main .img-devices { position: relative; margin-top: 100px; float: left; }
+.main .img-devices {   float: left; }
 .main .img-devices .devices{ position: absolute; display: block; font-size: 0; line-height: 0; text-indent: -999px;}
-.main .img-devices .devices.device1 { background: url('images/device1.png') no-repeat 0 0; width: 277px; height: 164px;  z-index: 5; top: 200px; left: 0; }
-.main .img-devices .devices.device2 { background: url('images/device2.png') no-repeat 0 0; width: 469px; height: 366px; left: 107px; top: 0; }
-.main .img-devices .devices.device3 { background: url('images/device3.png') no-repeat 0 0; width: 172px; height: 201px; left: 455px; top: 160px; }
-.main .img-devices .devices.device4 { background: url('images/device4.png') no-repeat 0 0; width: 118px; height: 151px;   z-index: 9; left: 640px; top: 215px; }
-.main .img-devices .devices.device5 { background: url('images/device5.png') no-repeat 0 0; width: 73px; height: 105px;  z-index: 10; left: 592px; top: 261px;}
-
-.main .container .social ul li { display: inline-block; }
-.main .container .social ul li > a { font-size: 0; line-height: 0; text-indent: -999px; }
-.main .container .social { position: relative; }
-.main .container .social .ico-social { display: block; position: relative;  border: 2px solid #545454; border-radius: 50%;  background-color: #545454; opacity: 60%; }
-.main .container .social .ico-social.drbl { background: url('images/social-dribble.png') no-repeat 0 0; width: 19px; height: 19px; padding: 10px; position: absolute;  }
-.main .container .social .ico-social.fb { background: url('images/social-facebook.png') no-repeat 0 0; width: 11px; height: 19px; padding: 10px; position: absolute;  }
-.main .container .social .ico-social.twtr { background: url('images/social-twitter.png') no-repeat 0 0; width: 24px; height: 11px; padding: 10px; position: absolute;  }
-.main .container .social .ico-social.email { background: url('images/social-email.png') no-repeat 0 0; width: 24px; height: 24px; padding: 10px; position: absolute;  }
+.main .img-devices .devices.device1 { background: url('images/device1.png') no-repeat 0 0; width: 277px; height: 164px;  z-index: 5;bottom: 0; left: 0; }
+.main .img-devices .devices.device2 { background: url('images/device2.png') no-repeat 0 0; width: 469px; height: 366px; left: 107px; bottom: 0; }
+.main .img-devices .devices.device3 { background: url('images/device3.png') no-repeat 0 0; width: 172px; height: 201px; left: 455px; bottom: 0; }
+.main .img-devices .devices.device4 { background: url('images/device4.png') no-repeat 0 0; width: 118px; height: 151px;   z-index: 9; left: 640px; bottom: 0; }
+.main .img-devices .devices.device5 { background: url('images/device5.png') no-repeat 0 0; width: 73px; height: 105px;  z-index: 10; left: 592px; bottom: 0;}
+.main .social { background-color: #f4f4f4; position: relative;}
+.main .social .container  ul {  text-align: center; }
+.main .social .container  ul li { margin: 230px 0 65px;display: inline-block; padding-right: 75px; }
+.main .social .container  ul li > a { font-size: 0; line-height: 0; text-indent: -999px; }
+.main .social .container  { position: relative; }
+.main .social .container  .ico-social { display: block; position: relative;  border: 2px solid #545454; border-radius: 50%;  padding:25px; background-repeat: no-repeat; background-position: center center; }
+.main .container .submit { text-align: center; }
+.main .container .submit label { font-size: 16px; line-height: 20px; font-style: italic; color: #545454; padding-right: 25px; }
+.main .container .submit .input-form { border: 0; border-radius: 10px; width: 200px; height: 43px; font-size: 14px; line-height: 18px; color: #d3d3d3; font-style: italic;  margin-bottom: 240px; padding-left: 20px; }
+.main .container .submit .ico-blue-email {/*display: block; position: absolute;  background: url(images/email-blue.png) 0 0 no-repeat; width: 15px; height: 12px;*/ font-size: 0; line-height: 0; text-indent: -999px }
+.main .container .ico-social.drbl { background-image: url('images/social-dribble.png'); width: 24px; height: 24px; padding: 10px; position: absolute;   }
+.main .container .ico-social.fb { background-image: url('images/social-facebook.png'); width: 24px; height: 24px; padding: 10px; position: absolute;  }
+.main .container .ico-social.twtr { background-image: url('images/social-twitter.png'); width: 24px; height: 24px; padding: 10px; position: absolute;  }
+.main .container .ico-social.email { background-image: url('images/social-email.png'); width: 24px; height: 24px; padding: 10px; position: absolute;  }
 /*Main*/
 
 
