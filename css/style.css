@@ -87,9 +87,10 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .main .social .container  { position: relative; }
 .main .social .container  .ico-social { display: block; position: relative;  border: 2px solid #545454; border-radius: 50%;  padding:25px; background-repeat: no-repeat; background-position: center center; }
 .main .container .submit { text-align: center; }
+.main .container .submit .input-icon{ position: relative; display: inline; }
 .main .container .submit label { font-size: 16px; line-height: 20px; font-style: italic; color: #545454; padding-right: 25px; }
-.main .container .submit .input-form { border: 0; border-radius: 10px; width: 200px; height: 43px; font-size: 14px; line-height: 18px; color: #d3d3d3; font-style: italic;  margin-bottom: 240px; padding-left: 20px; }
-.main .container .submit .ico-blue-email {/*display: block; position: absolute;  background: url(images/email-blue.png) 0 0 no-repeat; width: 15px; height: 12px;*/ font-size: 0; line-height: 0; text-indent: -999px }
+.main .container .submit input { border: 0; border-radius: 10px; width: 200px; height: 43px; font-size: 14px; line-height: 18px; color: #d3d3d3; font-style: italic;  margin-bottom: 240px; padding-left: 20px; }
+.main .container .submit .ico-blue-email {display: block; position: absolute;  background: url(images/email-blue.png) 0 0 no-repeat; width: 15px; height: 12px; font-size: 0; line-height: 0; text-indent: -999px; top: 50%; right: 18px; transform: translateY(-50%); }
 .main .container .ico-social.drbl { background-image: url('images/social-dribble.png'); width: 24px; height: 24px; padding: 10px; position: absolute;   }
 .main .container .ico-social.fb { background-image: url('images/social-facebook.png'); width: 24px; height: 24px; padding: 10px; position: absolute;  }
 .main .container .ico-social.twtr { background-image: url('images/social-twitter.png'); width: 24px; height: 24px; padding: 10px; position: absolute;  }
