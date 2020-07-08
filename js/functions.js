@@ -1,15 +1,20 @@
 ;(function($, window, document, undefined) {
 
 	$(document).ready(function(){
-		console.log(1);
+		let menuBtn=document.querySelector('.menu');
 
-		// let value=$('.menu');
+		function toggleMenu (){
+			menuBtn.classList.toggle('active')
+		}
 
-		// value.on('click', function(event), {
+		menuBtn.addEventListener('click', toggleMenu);
 
-		// })
+		function showMenu(){
+			let menuList = document.querySelector('.burger-menu');
+			showMenu.classList.toggle('overlay')
 
-
+		}
+		menuList.addEventListener('click', showMenu);
 	});
 		
 
