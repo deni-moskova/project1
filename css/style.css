@@ -25,6 +25,7 @@ body { font-family:'Proxima Nova Alt Rg';  font-weight: bold;
     font-style: normal; } 
 ul { list-style: none; }
 p { margin-bottom:30px; }
+.wrapper { overflow: hidden; }
 .container{ width:940px; padding: 0 10px; margin: 0 auto; }
 .btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; display: inline-block;}
 
@@ -108,3 +109,14 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .footer .container .arrow {border: solid #545454; border-width: 0 3px 3px 0; display: inline-block; padding: 4px; transform: rotate(-135deg); font-size: 0; line-height: 0; text-indent: -999px; position: absolute; top: 37.88%; right: 35.75%; } 
 
 /*Footer*/
+@media only screen and (max-width: 1150px){
+    #second{ clear: both; text-align: center; width: 100%;}
+    .main .img-devices { clear: both; }
+}
+
+@media only screen and (max-width: 768px){
+
+   .header .container .img-holder.phone {background:url(images/phone-image-full.png) no-repeat 0 0; width: 227px; height:480px; }
+    .main .container .img-holder.tablet { background: url(images/tablet-image-full.png) no-repeat 0 0; width: 407px; height: 577px; clear: right;  }
+}
+
