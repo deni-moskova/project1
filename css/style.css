@@ -31,14 +31,19 @@ p { margin-bottom:30px; }
 
 /*Header*/
 .header { background-image: url(images/background-header.jpg); color: #fff; max-height: 650px; }
-.overlay {  background-color: rgb(243, 120, 122);
-  opacity: 0.902; }
 .logo { background: url(images/p-logo.png) no-repeat 0 0; width: 100px; height: 100px; font-size: 0; line-height: 0;
 text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 11px; }
 .header .container { position: relative; }
-.header .container .burger-menu { position: absolute; top: 50%; left: 50%; transform: translateY(-50%); visibility: hidden;  }
+.header .container .burger-menu { position: absolute; top: 50%; left: 50%; transform: translateY(-50%); /*visibility: hidden;*/  }
+.header .container .burger-menu li {  }
 .header .container .burger-menu li + li{ padding-top: 55px; }
 .header .container .burger-menu li > a{ text-decoration: none; color: #fff; text-transform: lowercase; font-size: 18px; line-height: 22px; font-style: italic; font-weight: bold; }
+.header .container .burger-menu .icon { position: relative; }
+.header .container .burger-menu .icon:before{ content: ''; position: absolute; display: block; top: 50%; left: -60px; transform: translateY(-50%); width: 21px; height: 19px; padding: 10px; background-repeat: no-repeat; background-position: center center; background-color: #fff; border-radius: 50%; }
+.header .container .burger-menu .icon.home:before { background-image: url(images/ico-home.png);  }
+.header .container .burger-menu .icon.about:before { background-image: url(images/ico-heart.png);  }
+.header .container .burger-menu .icon.portfolio:before { background-image: url(images/ico-screen.png);  }
+.header .container .burger-menu .icon.contact:before { background-image: url(images/ico-contact.png);  }
 .header .container h1{ text-align: right; font-size: 70px; line-height: 74px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
 .header .container p {font-size: 35px; line-height: 39px; font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-style: normal; text-align: right;margin-top: 45px; }
 .header .container p strong { font-family: 'Proxima Nova Alt Rg';  font-weight: bold;  font-style: italic;}
