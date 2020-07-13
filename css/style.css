@@ -30,12 +30,16 @@ p { margin-bottom:30px; }
 .btn { text-decoration: none; border: 2px solid #fff; padding: 17px 28px; font-size: 15px; line-height: 19px; text-transform: uppercase; display: inline-block;}
 
 /*Header*/
-.header { background-image: url(images/background-header.jpg); color: #fff; max-height: 650px; }
+.header { background-image: url(images/background-header.jpg); color: #fff; max-height: 650px; position: relative;}
+.header:before{ content: '';  background-color: rgba(243, 120, 122, 0.9);    position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; visibility: hidden;  }
+.header.open:before { visibility: visible; background-color: rgba(243, 120, 122, 0.9);
+  animation-name: animated-bckgr;
+  animation-duration: .2s; }
 .logo { background: url(images/p-logo.png) no-repeat 0 0; width: 100px; height: 100px; font-size: 0; line-height: 0;
 text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 11px; }
 .header .container { position: relative; }
-.header .container .burger-menu { position: absolute; top: 50%; left: 50%; transform: translateY(-50%); /*visibility: hidden;*/  }
-.header .container .burger-menu li {  }
+.header .container .burger-menu { position: absolute; top: 50%; left: 50%; transform: translateY(-50%); visibility: hidden;  z-index: 7; }
+.header .container .burger-menu.open { visibility: visible;  animation-name: animated-menu; animation-duration: .2s; }
 .header .container .burger-menu li + li{ padding-top: 55px; }
 .header .container .burger-menu li > a{ text-decoration: none; color: #fff; text-transform: lowercase; font-size: 18px; line-height: 22px; font-style: italic; font-weight: bold; }
 .header .container .burger-menu .icon { position: relative; }
@@ -47,7 +51,7 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .header .container h1{ text-align: right; font-size: 70px; line-height: 74px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
 .header .container p {font-size: 35px; line-height: 39px; font-family: 'Proxima Nova Alt Lt'; font-weight: 300; font-style: normal; text-align: right;margin-top: 45px; }
 .header .container p strong { font-family: 'Proxima Nova Alt Rg';  font-weight: bold;  font-style: italic;}
-.header .container .menu { float: right; position: relative; top: -80px; font-size: 0; line-height: 0; text-indent: -999px; border: 0; background-color: transparent; cursor: pointer; }
+.header .container .menu { float: right; position: relative; top: -80px; font-size: 0; line-height: 0; text-indent: -999px; border: 0; background-color: transparent; cursor: pointer; z-index: 9; }
 .header .container .menu .bar1, .header .container .menu .bar2{ background-color: #fff; width: 30px; height: 4px; border-radius: 3px; margin-bottom: 2px; display: block; position: relative; transition: all .3s ease-in-out;}
 .header .container .menu .bar1:before, .header .container .menu .bar2:after{
     content: ''; background-color: #fff; width: 30px; height: 4px; display: block; border-radius: 3px; position: absolute; 
@@ -120,6 +124,17 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
 .footer .container .arrow {border: solid #545454; border-width: 0 3px 3px 0; display: inline-block; padding: 4px; transform: rotate(-135deg); font-size: 0; line-height: 0; text-indent: -999px; position: absolute; top: 37.88%; right: 35.75%; } 
 
 /*Footer*/
+
+@keyframes animated-menu{
+   0%   { top: 0; left: 50% }
+   25%   { top: 25%; left: 50% }
+   50%   { top: 50%; left: 50% }
+}
+@keyframes animated-bckgr{
+  0%   {background-color: rgba(243, 120, 122, 0.4); }
+   50%   {background-color: rgba(243, 120, 122, 0.6);  }
+}
+
 @media only screen and (max-width: 1150px){
     #second{ clear: both; text-align: center; width: 100%;}
     .main .img-devices { clear: both; }
@@ -131,13 +146,3 @@ text-indent: -100%; border-bottom: 3px solid #0da9e5; box-shadow: #27b0e6 14px 1
     .main .container .img-holder.tablet { background: url(images/tablet-image-full.png) no-repeat 0 0; width: 407px; height: 577px; clear: right;  }
 }
 
-
-.nav_overlay_bg {
- 
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1260px;
-  height: 651px;
-  z-index: 40;
-}

@@ -9,12 +9,15 @@
 
 		menuBtn.addEventListener('click', toggleMenu);
 
-		function showMenu(){
-			let menuList = document.querySelector('.burger-menu');
-			showMenu.classList.toggle('overlay')
+		$('.menu').on('click', function(){
+			$('.burger-menu').toggleClass('open');
 
-		}
-		menuList.addEventListener('click', showMenu);
+		});
+		$('.menu').on('click', function(){
+			$('.header').toggleClass('open');
+
+		});
+
 	});
 		
 
